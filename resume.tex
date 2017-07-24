@@ -1,0 +1,157 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.65in,right=0.65in,top=0.50in,bottom=0.50in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+% \hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Timothy}{Hanson}
+\phone[mobile]{(301)-613-5527}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{tbhanson96@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.cse.iitb.ac.in/\textasciitilde utkarshk}                         % optional, remove / comment the line if not wanted
+\extrainfo{1838 W Leah Lane | Gilbert, AZ | 85233}                 % optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-30pt}
+\hspace{75pt}
+\textit{Computational physics major with a career focus on Software Engineering.}
+% \vspace{12pt}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+% {\textbf{Homepage:} \url{www.cse.iitb.ac.in/\textasciitilde utkarshk}}
+\vspace{-10pt}
+
+
+
+%%%%%%%%%%%%% YO FUK SKOOL THO %%%%%%%%%%%%%%%%%
+\section{Education}
+
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+\cventry{}{}{University of Illinois at Urbana-Champaign | Class of 2018}{\textmd{3.55/4.00 GPA}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\vspace{-10pt}
+\item B.S. Engineering Physics | James Scholar | Minors in Computer Science and Mathematics
+\item \textit{Computer Science Coursework:} Data Structures, System Programming, Numerical Analysis, Applied Machine Learning, Computer Security I
+\item \textit{Physics Coursework:} Classical Mechanics I \& II, Electromagnetic Fields I \& II, Special Relativity, Quantum Mechanics
+}
+\end{itemize}
+
+%%%%%%%%% I AINT SAYIN IM A GOLD DIGGA %%%%%%%%%%%
+\vspace{-10pt}
+\section{Work Experience}
+
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+\vspace{-1pt}
+\cventry{Goleta, CA}{Software Engineering Intern}{Appfolio Inc.}{\textmd{May - August 2017}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item Implemented highly requested key tracking service in Rails \textit{property} application serving over \textbf{20,000} property managers
+\vspace{-1pt}
+\item Added features to growing mobile \textit{React-native} app with over \textit{9,000} daily active users
+\vspace{-1pt}
+\item Some more bullshit about how hard i've worked here
+}
+
+\cventry{Champaign, IL}{Software Engineering Intern}{Tyto Agricultural Inc.}{\textmd{May - August 2016}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item Native \textbf{android} development, implemented backend server and redesigned application UI
+\vspace{-1pt}
+\item Worked with team of interns to improve and resolve issues of distributed device communication, overloaded backend, and reliability of real-time GPS tracking service
+\vspace{-1pt}
+\item Pioneered redesign of application backend on Google's Firebase, restructured device information as JSON objects
+}
+
+\cventry{Champaign, IL}{Programming and Research Assistant}{College of Materials Science at UIUC}{\textmd{May - August 2016}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item Member of PrairieLearn development team, worked on computerized testing server utilized across engineering college of over \textbf{7,000} students
+\vspace{-1pt}
+\item Developed client-side Javascript and HTML currently in use
+\vspace{-1pt}
+\item Restructured \LaTeX{} course files into HTML style testing questions with radio and text input fields, reformatted over \textbf{150} files and \textbf{400} test questions
+}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%% LEAD THE SHIT OUTTA THIS SHIT%%%%%%%%%%%%%%%%
+\section{Leadership Experience}
+
+\vspace{-1pt}
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+\cventry{Champaign, IL}{}{Engineering Teaching Assistant}{\textmd{August - present 2017}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\vspace{-10pt}
+\item Lectured and mentored class of 25 freshmen in the College of Engineering
+\vspace{-1pt}
+\item Single-handedly taught concepts of career goals, time management, professional behavior and writing
+}
+
+\cventry{Champaign, IL}{Engine Team}{Illini Formula Motorsports Club}{\textmd{Aug 2015 - Aug 2016}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item Collaborated with engineers of various disciplines to design operational formula racing car
+\item Finished \textbf{3rd} place at \textit{FSAE Lincoln 2015} \textbf{national} competition
+}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%% YO I GOT MAD SKILLS BRO %%%%%%%%%%%%%%%%%
+\section{Achievements, Skills, \& Interests}
+
+\begin{itemize}[leftmargin=0.2in]
+\setlength\itemsep{.2em}
+\item \textbf{Proficient Languages:} Java, Ruby, Python, Javascript (ECMAscript 6)
+\vspace{-4pt}
+\item Other Languages: C++, C, BASH, R
+\vspace{-4pt}
+\item \textbf{Proficient Development Platforms:} React Native, Ruby on Rails, Android Studio
+\vspace{-4pt}
+\item 2300 SAT score, \textbf{1st} place finisher at 2012 Maryland State Impressionist Piano competition
+\vspace{-4pt}
+\item Interests \& Hobbies: Golf, swimming, tennis, classical music, health \& nutrition
+
+\end{itemize}
+\end{document}
+
+
+%% end of file `template.tex'.
+
